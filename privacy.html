@@ -4,118 +4,17 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Stellar: Privacy Policy</title>
-<!-- Google Fonts -->
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<style>
-    /* Basic Reset */
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-
-    body {
-        font-family: 'Poppins', sans-serif;
-        background-color: #0b0c0f;
-        color: #ffffff;
-        line-height: 1.6;
-        padding: 20px;
-    }
-
-    /* Navigation */
-    nav {
-        display: flex;
-        justify-content: center;
-        margin-bottom: 30px;
-        gap: 20px;
-        flex-wrap: wrap;
-    }
-
-    nav a {
-        display: inline-block;
-        text-decoration: none;
-        text-align: center;
-        background-color: #1f2a38;
-        padding: 10px 20px;
-        font-size: 16px;
-        font-weight: 600;
-        color: #ffffff;
-        border-radius: 8px;
-        transition: all 0.3s ease;
-    }
-
-    nav a:hover, nav a.active {
-        background-color: #65d6f9; /* Icy blue */
-        color: #0b0c0f;
-    }
-
-    /* Page container */
-    .page {
-        max-width: 900px;
-        margin: 0 auto;
-        background-color: #11151c;
-        padding: 30px;
-        border-radius: 15px;
-        box-shadow: 0 0 20px rgba(101, 214, 249, 0.2);
-        overflow-x: auto;
-    }
-
-    h1, h2, h3 {
-        color: #65d6f9; /* Icy blue headings */
-        margin-bottom: 15px;
-    }
-
-    h1 {
-        font-size: 32px;
-        margin-bottom: 25px;
-    }
-
-    h2 {
-        font-size: 24px;
-        margin-bottom: 15px;
-    }
-
-    h3 {
-        font-size: 20px;
-        margin-bottom: 10px;
-    }
-
-    p, li {
-        font-size: 16px;
-        margin-bottom: 12px;
-        color: #e0e0e0;
-    }
-
-    ul {
-        margin-left: 20px;
-        margin-bottom: 20px;
-    }
-
-    /* Scrollbar */
-    .page::-webkit-scrollbar {
-        width: 8px;
-    }
-    .page::-webkit-scrollbar-thumb {
-        background: #65d6f9;
-        border-radius: 4px;
-    }
-    .page::-webkit-scrollbar-track {
-        background: #0b0c0f;
-    }
-
-    @media (max-width: 768px) {
-        nav {
-            flex-direction: column;
-            gap: 10px;
-        }
-    }
-</style>
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
+<canvas id="starfield"></canvas>
 
 <nav>
     <a href="tos.html">Terms of Service</a>
     <a href="privacy.html" class="active">Privacy Policy</a>
+    <a href="delete.html">Delete Account</a>
 </nav>
 
 <div class="page">
@@ -129,64 +28,97 @@
 
 <h2>2. Information We Collect</h2>
 <h3>a) Information You Provide to Us</h3>
-<p>When you create an account, we collect the following personal information:</p>
 <ul>
-<li>Full Name: Used for numerological calculations to generate your personalized content.</li>
-<li>Date of Birth: Used for astrological and numerological calculations to provide horoscope readings and other reports.</li>
-<li>Email Address: Used to create and manage your account, for login and authentication, and to communicate with you about your account.</li>
-<li>Password: Used to secure your account.</li>
+<li>Full Name: Used for numerological calculations to generate personalized content</li>
+<li>Date of Birth: Used for astrological and numerological calculations</li>
+<li>Email Address: Used to manage your account and communicate important updates</li>
+<li>Password: Used to secure your account</li>
 </ul>
 <p>This information is securely stored using Google’s Firebase services.</p>
 
-<h3>b) Information We Collect Automatically (Usage Data)</h3>
-<p>When you interact with our Service, we automatically collect information about your actions, such as:</p>
+<h3>b) Information Collected Automatically (Usage Data)</h3>
 <ul>
-<li>Interaction Data: How you navigate the app and which features you use (e.g., accessing “Daily Horoscope” or “Relationship Compatibility”). This helps us understand popular features, identify and fix bugs, and improve the overall user experience.</li>
-<li>Technical Data: Certain technical data may be automatically collected by our service providers, such as device type, operating system version, and IP address, for security and operational purposes.</li>
-<li>Analytics Data: We may use Firebase Analytics to understand how users interact with the app. This data is aggregated and does not personally identify you.</li>
+<li>Interaction Data: How you navigate the app and which features you use</li>
+<li>Technical Data: Device type, OS version, IP address for security and operations</li>
+<li>Analytics Data: Aggregated Firebase Analytics to improve app experience</li>
 </ul>
 
-<h3>**Children’s Privacy (COPPA)**</h3>
-
-<p>Our Service is intended for users of all ages. We do not knowingly collect personal information from children under the age of 13 without parental consent.</p>
-<p>If we become aware that we have collected personal information from a child under 13 without parental consent, we will delete it promptly.</p>
-<p>Parents or guardians may request access to, or deletion of, their child’s personal information by contacting us at alexandrugav11@gmail.com. </p>
-
+<h3>Children's Privacy</h3>
+<p>Our Service is not directed to or intended for individuals under the age of 16. We do not knowingly collect personal data from children under 16.</p>
+<p>If you are a parent or guardian and you become aware that your child has created an account and provided us with Personal Data in violation of our policy, please contact us immediately at <a href="mailto:alexandrugav11@gmail.com">alexandrugav11@gmail.com</a>. If we become aware that we have collected Personal Data from a child under 16, we will take steps to remove that information from our servers and terminate the child's account.</p>
 
 <h2>3. How We Use Your Information</h2>
-<p>We use the information we collect for the following purposes:</p>
 <ul>
-<li>To Provide and Maintain the Service: To create and manage your account and deliver the app’s core features.</li>
-<li>To Personalize Your Experience: We use your full name and date of birth to perform the calculations needed to generate your personalized horoscopes and reports.</li>
-<li>To Improve Our Service: We analyze Usage Data to understand user behavior, which helps us enhance existing features and develop new ones.</li>
-<li>To Communicate With You: To respond to your requests, such as data deletion, and to send important notices about your account or changes to our Terms or this Policy.</li>
-<li>To Process Transactions: To manage your subscriptions and one-time purchases through Google Play Billing.</li>
+<li>To Provide and Maintain the Service: Manage your account and deliver app features</li>
+<li>To Personalize Your Experience: Generate personalized horoscopes and reports</li>
+<li>To Improve Our Service: Analyze Usage Data to enhance existing features and develop new ones</li>
+<li>To Communicate With You: Respond to requests, including data deletion, and send notices about account or policy changes</li>
+<li>To Process Transactions: Manage subscriptions and one-time purchases through Google Play Billing</li>
 </ul>
-<p><strong>Legal Basis for Processing (EU/EEA users):</strong><br>
-If you are located in the European Economic Area, we process your personal data under one or more of the following legal bases: (a) your consent, (b) to perform a contract with you (e.g., to provide the Service), or (c) our legitimate interest in improving and securing the Service.</p>
 
 <h2>4. How We Share Your Information</h2>
-<p>We do not sell your personal data. We share your information only with trusted third-party services that help us operate our App:</p>
 <ul>
-<li><strong>AI Content Generation:</strong> To generate personalized reports, your full name and date of birth are processed by a third-party AI model. This data is used only to generate your requested report and is not used to identify or track you.</li>
-<li><strong>Service Providers (Google Firebase):</strong> We use Google Firebase for backend infrastructure, including Firestore Database (data storage), Firebase Functions (server logic), and Firebase Authentication (account management). Your data is stored securely on Google’s servers.</li>
-<li><strong>Payment Processing (Google Play Billing):</strong> All payments are processed by Google Play Billing. We do not receive, process, or store your credit card or other financial information. This process is subject to Google’s own privacy policy.</li>
-<li><strong>Legal Requirements:</strong> We may disclose information if required to do so by law or in response to valid requests from public authorities (e.g., courts or government agencies).</li>
+<li>AI Content Generation: Your name and DOB processed by a third-party AI only to generate requested reports</li>
+<li>Service Providers (Google Firebase): For backend storage, server logic, and account management</li>
+<li>Payment Processing (Google Play Billing): Payments handled by Google; no credit card data is stored by us</li>
+<li>Legal Requirements: Disclose information when required by law or government authorities</li>
 </ul>
 
 <h2>5. Data Security and Retention</h2>
-<p>We are committed to protecting your data. We use reputable service providers like Google Firebase and implement administrative and technical safeguards to protect your personal information. However, no method of transmission over the internet or electronic storage is 100% secure, and we cannot guarantee absolute security.</p>
-<p><strong>Data Retention:</strong> We retain your personal data only as long as your account is active or as needed to provide the Service. If you delete your account, your personal data will be permanently deleted from our active systems within 30 days, except where retention is required by law.</p>
+<p>We use reputable providers like Google Firebase and implement technical and administrative safeguards. No method of transmission or storage is 100% secure.</p>
+<p>Data is retained only as long as your account is active or needed to provide the Service. If you delete your account, your personal data will be permanently deleted from our systems within 30 days, except where law requires retention.</p>
 
 <h2>6. Your Data Rights and Choices</h2>
-<p>Depending on your country of residence, you may have certain rights regarding your personal data. We are committed to upholding these rights for all users.</p>
 <ul>
-<li><strong>Access and Correction:</strong> You can access and update your account information directly within the App.</li>
-<li><strong>Deletion:</strong> You have the right to delete your account and all associated personal data. You can request this by contacting us at alexandrugav11@gmail.com</li>
+<li>Access and Correction: Update your account info directly in the App</li>
+<li>Deletion: You can delete your account and all associated personal data directly via the App. If you cannot do this for any reason, contact us via <a href="mailto:alexandrugav11@gmail.com">email</a>. Only billing records may remain; all other personal data will be permanently deleted.</li>
 </ul>
 
 </div>
 
+<script>
+// Floating star cursor
+const colors = ['#40e0d0', '#65d6f9', '#f9d71c', '#ffffff'];
+document.addEventListener('mousemove', e => {
+    const star = document.createElement('div');
+    star.classList.add('star-cursor');
+    document.body.appendChild(star);
+    const size = Math.random() * 6 + 4;
+    star.style.width = size + 'px';
+    star.style.height = size + 'px';
+    star.style.left = e.clientX - size/2 + 'px';
+    star.style.top = e.clientY - size/2 + 'px';
+    star.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+    star.style.opacity = 1;
+    setTimeout(() => {
+        star.style.transform = `translateY(-30px) scale(0.5)`;
+        star.style.opacity = 0;
+    }, 50);
+    setTimeout(() => star.remove(), 1000);
+});
+
+// Starfield background
+const canvas = document.getElementById('starfield');
+const ctx = canvas.getContext('2d');
+let stars = [];
+function resizeCanvas() { canvas.width = window.innerWidth; canvas.height = window.innerHeight; }
+window.addEventListener('resize', resizeCanvas);
+resizeCanvas();
+for(let i=0;i<150;i++){ stars.push({x:Math.random()*canvas.width, y:Math.random()*canvas.height, radius:Math.random()*1.2+0.3, speed:Math.random()*0.3+0.1}); }
+function drawStars(){
+    ctx.clearRect(0,0,canvas.width,canvas.height);
+    ctx.fillStyle='#ffffff';
+    stars.forEach(star=>{
+        ctx.beginPath();
+        ctx.arc(star.x, star.y, star.radius, 0, Math.PI*2);
+        ctx.fill();
+        star.y-=star.speed;
+        if(star.y<0) star.y=canvas.height;
+    });
+    requestAnimationFrame(drawStars);
+}
+drawStars();
+</script>
+
 </body>
 </html>
-
